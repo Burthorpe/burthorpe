@@ -1,6 +1,6 @@
 # burthorpe-vagrant
 
-This is the development repo containing vagrant and deployment tools used to develop and maintain Burthorpe/burthorpe
+This is the development repo containing vagrant and deployment tools used to develop and maintain [Burthorpe/burthorpe](https://github.com/Burthorpe/burthorpe).
 
 ## Getting Started
 
