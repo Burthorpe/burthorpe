@@ -26,5 +26,3 @@ node['system']['packages'].each do |p|
     action :install
   end
 end
-
-include_recipe "nginxphp"
