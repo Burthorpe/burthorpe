@@ -1,5 +1,7 @@
 # Burthorpe.com
 
+[![Build Status](https://travis-ci.org/Burthorpe/burthorpe.svg?branch=master)](https://travis-ci.org/Burthorpe/burthorpe)
+
 Burthorpe.com is a website that provides a social platform for the users of Runescape as well as an API for developers
 
 ## Getting Started
