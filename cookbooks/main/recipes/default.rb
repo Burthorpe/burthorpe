@@ -1,9 +1,9 @@
 node.default['system']['packages'] = ['curl', 'git', 'vim']
 
 node.default['nginx']['server_name'] = "192.168.250.10"
-node.default['nginx']['doc_root'] = "/vagrant/burthorpe/public"
+node.default['nginx']['doc_root'] = "/vagrant/public"
 
-node.default['php']['packages'] = ['php5-curl', 'php5-cli', 'php5-mcrypt']
+node.default['php']['packages'] = ['php5-curl', 'php5-cli', 'php5-mcrypt', 'php5-mysql']
 
 execute "apt-get update" do
   command "apt-get update"

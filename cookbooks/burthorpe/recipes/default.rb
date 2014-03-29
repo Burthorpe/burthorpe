@@ -1,4 +1,4 @@
-composer_project "/vagrant/burthorpe" do
+composer_project "/vagrant" do
   dev true
   run_as "vagrant"
   quiet false

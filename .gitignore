@@ -1,2 +1,13 @@
 # Vagrant
 /.vagrant
+
+# Laravel
+/bootstrap/compiled.php
+
+# Composer
+/vendor
+composer.phar
+
+# OS
+.DS_Store
+Thumbs.db
