@@ -17,6 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.add_recipe "main"
       chef.add_recipe "nginxphp"
       chef.add_recipe "composer"
+      chef.add_recipe "burthorpe"
     end
 
   end
