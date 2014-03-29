@@ -73,8 +73,6 @@ return array(
 	*/
 
 	'redis' => array(
-		
-		),
 
 	),
 
