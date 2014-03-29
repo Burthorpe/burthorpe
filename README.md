@@ -1,10 +1,10 @@
-# burthorpe-vagrant
+# Burthorpe.com
 
-This is the development repo containing vagrant and deployment tools used to develop and maintain [Burthorpe/burthorpe](https://github.com/Burthorpe/burthorpe).
+Burthorpe.com is a website that provides a social platform for the users of Runescape as well as an API for developers
 
 ## Getting Started
 
-* git clone --recursive https://github.com/Burthorpe/burthorpe-vagrant.git
+* git clone https://github.com/Burthorpe/burthorpe.git
 * vagrant up
 
 Services, by default, are then available at the following locations:
@@ -16,7 +16,9 @@ More information on vagrant can be found [here](http://www.vagrantup.com/).
 
 ## Notes
 
-If you do not wish to use vagrant or other development tools contained in this repo, please clone [Burthorpe/burthorpe](https://github.com/Burthorpe/burthorpe).
+If you do not wish to use vagrant or other development tools contained in this repo, then you may setup your own development environment. The site root is located at `burthorpe/public`.
+
+If you are using your own development environment, don't forget to run `composer install --dev` from within the `burthorpe` directory.
 
 ## Copyright & License
 
