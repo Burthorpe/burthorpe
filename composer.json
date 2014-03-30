@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "Burthorope/burthorpe",
+	"description": "Burthorpe.com site and API.",
+	"keywords": ["burthorpe", "runescape"],
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*"
