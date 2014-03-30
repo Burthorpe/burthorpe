@@ -6,6 +6,13 @@
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
+	"authors": [
+		{
+			"name": "iWader",
+			"email": "wader@iwader.co.uk",
+			"homepage": "http://iwader.co.uk/"
+		}
+	],
 	"autoload": {
 		"classmap": [
 			"app/commands",
