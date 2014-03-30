@@ -3,6 +3,7 @@
 
 # Laravel
 /bootstrap/compiled.php
+/workbench
 
 # Composer
 /vendor
