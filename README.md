@@ -20,7 +20,7 @@ More information on vagrant can be found [here](http://www.vagrantup.com/).
 
 If you do not wish to use vagrant or other development tools contained in this repo, then you may setup your own development environment. The site root is located at `burthorpe/public`.
 
-If you are using your own development environment, don't forget to run `composer install --dev` from within the `burthorpe` directory.
+If you are using your own development environment, don't forget to run `composer install --dev` from within the root directory.
 
 ## Copyright & License
 
