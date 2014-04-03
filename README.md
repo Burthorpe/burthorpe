@@ -16,19 +16,14 @@ Services, by default, are then available at the following locations:
 
 More information on vagrant can be found [here](http://www.vagrantup.com/).
 
-### Building Assets with Grunt.js
+## Building Assets with Grunt.js
 
-Burthorpe.com uses Grunt.js to manage its assets. To get started building assets with Grunt.js you must first install [node.js](http://nodejs.org/)
+Burthorpe.com uses Grunt.js to manage its assets. To get start with grunt, run the following commands
 
-Firstly, install the grunt-cli package globally
+* `npm install -g grunt-cli`
+* `npm install`
 
-`npm install -g grunt-cli`
-
-Next we need to install dependencies for the project, run this from within the root directory of the project
-
-`npm install`
-
-Thats it, everything is ready to go. Now just run the following command and grunt will magically manage, build, minify and compile our assets ready for deployment
+Thats it, you're now ready to compile assets using Grunt.js, just use the following command and Grunt will automatically compile assets when a file change is detected.
 
 `grunt watch`
 
@@ -37,6 +32,8 @@ Thats it, everything is ready to go. Now just run the following command and grun
 If you do not wish to use vagrant or other development tools contained in this repo, then you may setup your own development environment. The site root is located at `/public`.
 
 If you are using your own development environment, don't forget to run `composer install --dev`.
+
+If you are editing anything in `public/assets` you **must** use the Grunt.js task runner.
 
 ## Copyright & License
 
