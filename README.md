@@ -6,8 +6,8 @@ Burthorpe.com is a website that provides a social platform for the users of Rune
 
 ## Getting Started
 
-* git clone https://github.com/Burthorpe/burthorpe.git
-* vagrant up
+* `git clone https://github.com/Burthorpe/burthorpe.git`
+* `vagrant up`
 
 Services, by default, are then available at the following locations:
 
@@ -18,7 +18,7 @@ More information on vagrant can be found [here](http://www.vagrantup.com/).
 
 ## Building Assets with Grunt.js
 
-Burthorpe.com uses Grunt.js to manage its assets. To get start with grunt, run the following commands
+Burthorpe.com uses Grunt.js to manage its assets. To get started with grunt, run the following commands
 
 * `npm install -g grunt-cli`
 * `npm install`
@@ -29,11 +29,11 @@ Thats it, you're now ready to compile assets using Grunt.js, just use the follow
 
 ## Notes
 
-If you do not wish to use vagrant or other development tools contained in this repo, then you may setup your own development environment. The site root is located at `/public`.
+* If you do not wish to use vagrant or other development tools contained in this repo, then you may setup your own development environment. The site root is located at `/public`.
 
-If you are using your own development environment, don't forget to run `composer install --dev`.
+* If you are using your own development environment, don't forget to run `composer install --dev`.
 
-If you are editing anything in `public/assets` you **must** use the Grunt.js task runner.
+* If you are editing anything in `public/assets` you **must** use the Grunt.js task runner.
 
 ## Copyright & License
 
