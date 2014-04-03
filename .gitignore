@@ -5,6 +5,9 @@
 /bootstrap/compiled.php
 /workbench
 
+# Node
+/node_modules
+
 # Composer
 /vendor
 composer.phar
