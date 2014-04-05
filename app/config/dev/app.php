@@ -42,7 +42,8 @@ return array(
 	'providers' => array(
 
 		'Way\Generators\GeneratorsServiceProvider',
-		
+		'Barryvdh\Debugbar\ServiceProvider',
+
 	),
 
 	/*
@@ -57,6 +58,8 @@ return array(
 	*/
 
 	'aliases' => array(
+
+		'Debugbar' => 'Barryvdh\Debugbar\Facade',
 
 	),
 
