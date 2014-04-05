@@ -79,3 +79,28 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Require The Macros File
+|--------------------------------------------------------------------------
+|
+| Now we will load the macros file for the application. This gives us
+| a nice separate location to store our macros.
+|
+*/
+
+require app_path().'/macros.php';
+
+/*
+|--------------------------------------------------------------------------
+| Require The Functions File
+|--------------------------------------------------------------------------
+|
+| Now we will load the functions file for the application. This gives us
+| a nice separate location to store our miscellaneous functions to use
+| throughout out application
+|
+*/
+
+require app_path().'/functions.php';
