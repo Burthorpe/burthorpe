@@ -94,6 +94,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Burthorpe\RunescapeApi\RunescapeApiServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
 
@@ -163,6 +164,7 @@ return array(
 		'RunescapeApi'    => 'Burthorpe\RunescapeApi\Facades\RunescapeApi',
 		'EocApi'          => 'Burthorpe\RunescapeApi\Facades\EocApi',
 		'OsApi'           => 'Burthorpe\RunescapeApi\Facades\OsApi',
+		'Sentry'					=> 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 	),
 
