@@ -68,6 +68,19 @@ module.exports = function(grunt) {
           'public/assets/css/common.min.css',
           'public/assets/js/common.min.js'
         ]
+      },
+      imagemin: {
+        dynamic: {
+          options: {
+            optimizationLevel: 7
+          },
+          files: [{
+            expand: true,
+            cwd: 'public/assets/img/src',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: '../'
+          }]
+        }
       }
     }
   });
@@ -77,11 +90,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Register tasks
   grunt.registerTask('default', [
     'less',
-    'uglify'
+    'uglify',
+    'imagemin'
   ]);
 
   grunt.registerTask('dev', [
