@@ -10,13 +10,13 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'public/assets/js/*.js',
-        '!/public/assets/js/common.min.js'
+        '!/public/assets/js/build/common.min.js'
       ]
     },
     less: {
       dist: {
         files: {
-          'public/assets/css/main.min.css': [
+          'public/assets/css/build/main.min.css': [
             'public/assets/less/app.less'
           ]
         },
@@ -28,13 +28,12 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'public/assets/js/common.min.js': [
+          'public/assets/js/build/common.min.js': [
             'public/assets/js/vendor/bootstrap/alert.js',
             'public/assets/js/vendor/bootstrap/button.js',
             'public/assets/js/vendor/bootstrap/dropdown.js',
             'public/assets/js/vendor/bootstrap/tooltip.js',
             'public/assets/js/vendor/*.js',
-            'public/assets/js/_*.js'
           ]
         }
       }
@@ -76,8 +75,8 @@ module.exports = function(grunt) {
           livereload: true
         },
         files: [
-          'public/assets/css/common.min.css',
-          'public/assets/js/common.min.js'
+          'public/assets/css/build/common.min.css',
+          'public/assets/js/build/common.min.js'
         ]
       },
       imagemin: {
