@@ -35,6 +35,8 @@ Thats it, you're now ready to compile assets using Grunt.js, just use the follow
 
 * If you are editing anything in `public/assets` you **must** use the Grunt.js task runner.
 
+* All images should be contained within `public/assets/img/src` and built using the `grunt imagemin` task. Any images within `public/assets/img/build` should **not** be committed.
+
 ## Copyright & License
 
 Copyright (c) 2014 Wade Urry - Released under the [MIT license](LICENSE).
