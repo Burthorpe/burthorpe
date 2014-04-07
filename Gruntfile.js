@@ -29,21 +29,32 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'public/assets/js/common.min.js': [
-            'public/assets/js/vendor/bootstrap/transition.js',
             'public/assets/js/vendor/bootstrap/alert.js',
             'public/assets/js/vendor/bootstrap/button.js',
-            'public/assets/js/vendor/bootstrap/carousel.js',
             'public/assets/js/vendor/bootstrap/dropdown.js',
-            'public/assets/js/vendor/bootstrap/modal.js',
             'public/assets/js/vendor/bootstrap/tooltip.js',
-            'public/assets/js/vendor/bootstrap/popover.js',
-            'public/assets/js/vendor/bootstrap/scrollspy.js',
-            'public/assets/js/vendor/bootstrap/tab.js',
-            'public/assets/js/vendor/bootstrap/affix.js',
             'public/assets/js/vendor/*.js',
             'public/assets/js/_*.js'
           ]
         }
+      }
+    },
+    imagemin: {
+      files: {
+      },
+      dynamic: {
+        options: {
+          optimizationLevel: 7,
+          cache: false
+        },
+        files: [{
+          expand: true,
+          cwd: 'public/assets/img/src',
+          src: [
+            '**/*.{png,jpg,gif}'
+          ],
+          dest: 'public/assets/img/build'
+        }]
       }
     },
     watch: {
@@ -70,17 +81,9 @@ module.exports = function(grunt) {
         ]
       },
       imagemin: {
-        dynamic: {
-          options: {
-            optimizationLevel: 7
-          },
-          files: [{
-            expand: true,
-            cwd: 'public/assets/img/src',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: '../'
-          }]
-        }
+        files: [
+          'public/assets/img/src/**/*'
+        ],
       }
     }
   });
