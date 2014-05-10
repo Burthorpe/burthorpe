@@ -57,6 +57,9 @@ module.exports = function(grunt) {
       }
     },
     watch: {
+      options: {
+        livereload: true
+      },
       less: {
         files: [
           'public/assets/less/*.less',
@@ -64,27 +67,18 @@ module.exports = function(grunt) {
           'public/assets/less/vendor/bootstrap/*.less',
           'public/assets/less/vendor/font-awesome/*.less'
         ],
-        options: {
-          livereload: true
-        },
         tasks: ['less']
       },
       js: {
         files: [
           '<%= jshint.all %>'
         ],
-        options: {
-          livereload: true
-        },
         tasks: ['jshint', 'uglify']
       },
       imagemin: {
         files: [
           'public/assets/img/src/**/*'
-        ],
-        options: {
-          livereload: true
-        }
+        ]
       }
     }
   });
