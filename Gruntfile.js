@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     less: {
       dist: {
         files: {
-          'public/assets/css/build/main.min.css': [
+          'public/assets/css/build/common.min.css': [
             'public/assets/less/app.less'
           ]
         },
@@ -60,29 +60,31 @@ module.exports = function(grunt) {
       less: {
         files: [
           'public/assets/less/*.less',
-          'public/assets/less/vendor/bootstrap/*.less'
+          'public/assets/less/burthorpe/*.less',
+          'public/assets/less/vendor/bootstrap/*.less',
+          'public/assets/less/vendor/font-awesome/*.less'
         ],
+        options: {
+          livereload: true
+        },
         tasks: ['less']
       },
       js: {
         files: [
           '<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'uglify']
-      },
-      livereload: {
         options: {
           livereload: true
         },
-        files: [
-          'public/assets/css/build/common.min.css',
-          'public/assets/js/build/common.min.js'
-        ]
+        tasks: ['jshint', 'uglify']
       },
       imagemin: {
         files: [
           'public/assets/img/src/**/*'
         ],
+        options: {
+          livereload: true
+        }
       }
     }
   });
