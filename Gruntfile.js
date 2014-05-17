@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'public/assets/js/*.js',
-        '!/public/assets/js/build/common.min.js'
+        '!/public/assets/js/build/*.js'
       ]
     },
     less: {
@@ -34,6 +34,7 @@ module.exports = function(grunt) {
             'public/assets/js/vendor/bootstrap/dropdown.js',
             'public/assets/js/vendor/bootstrap/tooltip.js',
             'public/assets/js/vendor/*.js',
+            'public/assets/js/*.js'
           ]
         }
       }
