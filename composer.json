@@ -8,7 +8,8 @@
 		"burthorpe/runescape-api": "dev-master",
 		"cartalyst/sentry": "2.1.*",
 		"guzzlehttp/guzzle": "~4.0",
-		"laravelbook/ardent": "dev-master"
+		"laravelbook/ardent": "dev-master",
+		"pda/pheanstalk": "2.*"
 	},
 	"require-dev": {
 		"way/generators": "2.*",
