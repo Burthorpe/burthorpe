@@ -26,10 +26,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     web.vm.network :private_network, ip: "192.168.250.10"
 
-    web.vm.provider "virtualbox" do |v|
-      v.memory = 1024
-    end
-
     web.vm.provision "chef_solo" do |chef|
       chef.add_recipe "main"
       chef.add_recipe "nginxphp"
