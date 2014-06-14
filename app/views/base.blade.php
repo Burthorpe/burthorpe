@@ -13,35 +13,46 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript">window.jQuery || document.write('<script src="{{ URL::asset('/assets/js/vendor/jquery-2.1.0.min.js') }}"><\/script>')</script>
-    @if(Config::get('app.debug') === true)
-      <script type="text/javascript" charset="utf-8">
-        var debug = {{ Config::get('burthorpe.debug_verbosity') }}
-      </script>
-    @endif
 
     @yield('base-head')
 
   </head>
   <body>
 
-    <div class="row">
-      <div class="col-md-2 col-sm-1 col-xs-1">
-        <div class="page-sidebar">
+    <div class="navbar navbar-static navbar-burthorpe navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
+            <span class="sr-only">Toggle Sidebar Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="{{ URL::action('BurthorpeController@index') }}" class="navbar-brand">
+            Burthorpe
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7 col-sm-3 col-md-3 sidebar sidebar-left sidebar-animate sidebar-md-show">
 
           @include('lib.parts.sidebar')
 
         </div>
-      </div>
 
-      <div class="col-md-10 col-sm-11 col-xs-11">
-        <div class="page-container">
+        <div class="main col-md-9 col-md-offset-3">
+          <div class="page-container">
 
-          <script type="text/javascript" src="{{ URL::asset('/assets/js/build/common.min.js') }}"></script>
+            <script type="text/javascript" src="{{ URL::asset('/assets/js/build/common.min.js') }}"></script>
 
-          @yield('base-content')
+            @yield('base-content')
 
+          </div>
         </div>
       </div>
     </div>

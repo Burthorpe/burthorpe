@@ -33,6 +33,7 @@ module.exports = function(grunt) {
             'public/assets/js/vendor/bootstrap/button.js',
             'public/assets/js/vendor/bootstrap/dropdown.js',
             'public/assets/js/vendor/bootstrap/tooltip.js',
+            'public/assets/js/vendor/bootstrap-sidebar/*.js',
             'public/assets/js/vendor/*.js',
             'public/assets/js/*.js'
           ]
@@ -72,7 +73,9 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          '<%= jshint.all %>'
+          '<%= jshint.all %>',
+          'public/assets/js/**/*',
+          '!public/assets/js/build/*'
         ],
         tasks: ['jshint', 'uglify']
       },
